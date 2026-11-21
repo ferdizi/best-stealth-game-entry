@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="NeuroSplice — a top-down cell-level stealth heist. Sneak a plasmid packet past macrophage patrols to the nuclear pore.">
+<title>NeuroSplice — Cell-Level Heist</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #070512; height: 100%; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; font-family: "Segoe UI", Verdana, sans-serif; }
+  #wrap { position: relative; width: 1280px; height: 800px; max-width: 100vw; max-height: 100vh; }
+  canvas { display: block; width: 100%; height: 100%; background: #0a0620; border-radius: 6px; }
+  #selftest { position: absolute; left: 8px; bottom: 6px; color: #7df9ff; font: 12px monospace;
+    background: rgba(0,0,0,0.55); padding: 4px 8px; border-radius: 4px; white-space: pre; display: none; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <div id="selftest"></div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
